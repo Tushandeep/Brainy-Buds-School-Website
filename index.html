@@ -58,7 +58,7 @@
 
     <script>
       // The value below is injected by flutter build, do not touch.
-      const serviceWorkerVersion = "2514243909";
+      const serviceWorkerVersion = "2274688404";
       // window.flutterWebRenderer = "canvaskit";
     </script>
     <!-- This script adds the flutter initialization JS code -->
@@ -153,10 +153,7 @@
           })
           .then(function (engineInitializer) {
             loading.classList.add("main_done");
-            let config = {
-              renderer: "canvaskit",
-            };
-            return engineInitializer.initializeEngine(config);
+            return engineInitializer.initializeEngine();
           })
           .then(function (appRunner) {
             loading.classList.add("init_done");
